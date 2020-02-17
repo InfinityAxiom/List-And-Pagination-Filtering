@@ -7,7 +7,7 @@ FSJS project 2 - List Filter and Pagination
 
 
 let studentList = document.getElementsByClassName('student-details');
-console.log(studentList);
+let numPerPage = 10;
 /*** 
    Add your global variables that store the DOM elements you will 
    need to reference and/or manipulate. 
@@ -18,16 +18,11 @@ console.log(studentList);
    will only be used inside of a function, then it can be locally 
    scoped to that function.
 ***/
-const showPage = (list, page) => {
-   startIndex = (page * 10) - 10;
-   endIndex = (page * 10);
-   //loop over 
-   for(var i = 0; i>=startIndex && i <= endIndex; i++){
-      //
-
-   }
+const showPage = (list, page) =>{
+   startIndex = (page * numPerPage) - numPerPage;
+   endIndex = (page *numPerPage)
+//loop over the list parameter
 }
-
 
 
 
