@@ -24,7 +24,9 @@ const showPage = (list, page) => {
   //want to pull the 10 that are on the "selected" page
   //figure out how to call page / list correctly
   for (i = startIndex; i < endIndex; i++) {
-    studentList[i].style.visibility = 'visible'
+    studentList[i].style.display = '';
+  }if (i<startIndex || i > endIndex ) {
+     studentList[i].style.display = 'none';
   }
 }
 
