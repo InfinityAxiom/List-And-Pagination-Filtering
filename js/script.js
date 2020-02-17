@@ -2,12 +2,11 @@
 Treehouse Techdegree:
 FSJS project 2 - List Filter and Pagination
 ******************************************/
-   
+
 // Study guide for this project - https://drive.google.com/file/d/1OD1diUsTMdpfMDv677TfL1xO2CEkykSz/view?usp=sharing
 
-
-let studentList = document.getElementsByClassName('student-details');
-let numPerPage = 10;
+let studentList = document.getElementsByClassName('student-item')
+let numPerPage = 10
 /*** 
    Add your global variables that store the DOM elements you will 
    need to reference and/or manipulate. 
@@ -18,27 +17,18 @@ let numPerPage = 10;
    will only be used inside of a function, then it can be locally 
    scoped to that function.
 ***/
-const showPage = (list, page) =>{
-   startIndex = (page * numPerPage) - numPerPage;
-   endIndex = (page *numPerPage)
-//loops over everything
-//want to pull the 10 that are on the "selected" page
-//figure out how to call page / list correctly
-   for(i=0; i < studentList.length; i++) {
-      if(i >= startIndex && i <= endIndex){
-         //make item visible on the page
-         studentList[i].style.visibility = 'visible';
-      } else {
-         studentList[i].style.visibility = 'hidden'
-      }
-   }
+const showPage = (list, page) => {
+  startIndex = page * numPerPage - numPerPage
+  endIndex = page * numPerPage
+  //loops over everything
+  //want to pull the 10 that are on the "selected" page
+  //figure out how to call page / list correctly
+  for (i = startIndex; i < endIndex; i++) {
+    studentList[i].style.visibility = 'visible'
+  }
 }
-showPage(0,2);
 
-
-
-
-
+showPage(0, 1)
 
 /*** 
    Create the `showPage` function to hide all of the items in the 
@@ -55,16 +45,9 @@ showPage(0,2);
        "invoke" the function 
 ***/
 
-
-
-
 /*** 
    Create the `appendPageLinks function` to generate, append, and add 
    functionality to the pagination buttons.
 ***/
-
-
-
-
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
