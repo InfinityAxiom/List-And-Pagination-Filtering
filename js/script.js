@@ -18,15 +18,16 @@ let numPerPage = 10
    scoped to that function.
 ***/
 const showPage = (list, page) => {
-  startIndex = page * numPerPage - numPerPage
-  endIndex = page * numPerPage
+  startIndex = page * numPerPage - numPerPage;
+  endIndex = page * numPerPage;
   //loops over everything
   //want to pull the 10 that are on the "selected" page
   //figure out how to call page / list correctly
   for (i = startIndex; i < endIndex; i++) {
     studentList[i].style.display = '';
-  }if (i<startIndex || i > endIndex ) {
-     studentList[i].style.display = 'none';
+    if (i < startIndex || i > endIndex) {
+      studentList[i].style.display = 'none';
+    }
   }
 }
 
