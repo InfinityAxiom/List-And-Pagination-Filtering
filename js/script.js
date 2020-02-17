@@ -30,8 +30,8 @@ const showPage = (list, page) => {
     }
   }
 }
-
-showPage(0, 1)
+//test showing/hiding items on the list
+showPage(0, 2);
 
 /*** 
    Create the `showPage` function to hide all of the items in the 
