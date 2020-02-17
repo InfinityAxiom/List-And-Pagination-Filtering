@@ -21,14 +21,20 @@ let numPerPage = 10;
 const showPage = (list, page) =>{
    startIndex = (page * numPerPage) - numPerPage;
    endIndex = (page *numPerPage)
-//loop over the list parameter
+//loops over everything
+//want to pull the 10 that are on the "selected" page
+//figure out how to call page / list correctly
    for(i=0; i < studentList.length; i++) {
       if(i >= startIndex && i <= endIndex){
          //make item visible on the page
-         studentList.element.style.visibility = 'visible';
+         studentList[i].style.visibility = 'visible';
+      } else {
+         studentList[i].style.visibility = 'hidden'
       }
    }
 }
+showPage(0,2);
+
 
 
 
