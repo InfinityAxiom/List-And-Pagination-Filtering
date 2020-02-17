@@ -24,6 +24,7 @@ const showPage = (list, page) =>{
 //loop over the list parameter
    for(i=0; i < studentList.length; i++) {
       if(i >= startIndex && i <= endIndex){
+         //make item visible on the page
          studentList.element.style.visibility = 'visible';
       }
    }
