@@ -22,6 +22,11 @@ const showPage = (list, page) =>{
    startIndex = (page * numPerPage) - numPerPage;
    endIndex = (page *numPerPage)
 //loop over the list parameter
+   for(i=0; i < studentList.length; i++) {
+      if(i >= startIndex && i <= endIndex){
+         studentList.element.style.visibility = 'visible';
+      }
+   }
 }
 
 
