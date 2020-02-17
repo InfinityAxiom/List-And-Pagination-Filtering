@@ -21,7 +21,9 @@ console.log(studentList);
 const showPage = (list, page) => {
    startIndex = (page * 10) - 10;
    endIndex = (page * 10);
+   //loop over 
    for(var i = 0; i>=startIndex && i <= endIndex; i++){
+      //
 
    }
 }
