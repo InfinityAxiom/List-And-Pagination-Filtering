@@ -15,21 +15,29 @@ const showPage = (list, page) =>{
 //loops over everything
 //want to pull the 10 that are on the "selected" page
 //figure out how to call page / list correctly
-   for(i=0; i < studentList.length; i++) {
+   for(i=0; i < list.length; i++) {
       if(i >= startIndex && i < endIndex){
          //make item visible on the page
          studentList[i].style.display = 'block';
       } else {
+         
          studentList[i].style.display = 'none';
       }
    }
 }
-showPage(0,6);
-
 /*** 
    Create the `appendPageLinks function` to generate, append, and add 
    functionality to the pagination buttons.
 ***/
+const appendPageLinks = (list) =>{
+   //determine the number of pages
+   pageNumbers = (studentList.length / numPerPage);
+   pageNumbers = Math.ceil(pageNumbers);
+   console.log(pageNumbers);
+   }
+   
+
+
 
 
 
